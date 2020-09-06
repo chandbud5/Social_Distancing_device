@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Portal</title>
+    <script>
+window.onload = function () {
+    var arr = []
+    {% for i in my_data %}
+            arr.push({{ i }})
+    {% endfor %}
+
+    var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Device Activity"
+	},
+        axisY:{
+            title:"Number of Alert during an Hour",
+        },
+        axisX:{
+            title:"Hours (24-hrs Format)",
+        },
+	data: [{
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+			{ y: arr[0] },
+			{ y: arr[1] },
+			{ y: arr[2] },
+			{ y: arr[3] },
+			{ y: arr[4] },
+			{ y: arr[5] },
+			{ y: arr[6] },
+			{ y: arr[7] },
+			{ y: arr[8] },
+			{ y: arr[9] },
+			{ y: arr[10] },
+			{ y: arr[11] },
+			{ y: arr[12] },
+			{ y: arr[13] },
+			{ y: arr[14] },
+			{ y: arr[15] },
+			{ y: arr[16] },
+			{ y: arr[17] },
+			{ y: arr[18] },
+			{ y: arr[19] },
+			{ y: arr[20] },
+			{ y: arr[21] },
+			{ y: arr[22] },
+			{ y: arr[23] }
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+    <h1 align="center">Welcome to Social distancing device portal</h1>
+    <div id="chartContainer" style="height: 400px; width: 100%;"></div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
