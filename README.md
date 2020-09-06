@@ -9,4 +9,14 @@ Now a days everyone is worried about **COVID-19**. There are so many people who 
 So we have came up with a **simple solution** which can save many lives. We have made an *Arduino* based social distancing device.
 
 <h2>Working</h2>
+
 An *Ultrasonic Sensor* is configured with Arduino. Using this sensor we measure the distance of the user wearing this device and another person. If the distance is *less than* the required distance then the user will get an **Alert message** on their phone. After sending an alert message system will store the timestamp to the *database*. This data can be accessed from a web based potal where user can get statistics about their alerts along with timestamp. So using *web portal* the user can track their device activity.
+
+<h2>Benefits</h2>
+  
+  - Get an alert on your mobile phone.
+  - Track your device activity.
+  - Taking care of your privacy we do not collect any other details about you.
+  - Cheap and Affordable solution.
+  - Small and compact in size.
+  - **Stay Safe and enjoy your work without any worries**
