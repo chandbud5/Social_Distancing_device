@@ -24,8 +24,9 @@ def record():
         password = "1234"
     )
     cur = con.cursor()
-    date = datetime.now()
-    cur.execute("INSERT INTO displaydb (timestamp) VALUES(%s)",(date,))
+    hrs = datetime.now().hour
+    m = datetime.now().minute
+    cur.execute("INSERT INTO displaydb (hour, minute) VALUES(%s, %s)",(hrs, m,))
     con.commit()
     cur.execute("SELECT * FROM displaydb")
     print(cur.fetchall())
