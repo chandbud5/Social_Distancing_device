@@ -1,5 +1,7 @@
 # Social Distancing device
 
+Demo for this is - **[HERE](https://youtu.be/pRfsKA1ViaU)**
+
 <h3 align="center">
 <img src="https://github.com/chandbud5/Social_Distancing_device/blob/main/imgs/Device.png"><br>
 Wearable device</h3>
